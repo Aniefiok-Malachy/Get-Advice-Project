@@ -39,7 +39,20 @@ function Message(props){ {/* CALLING THE SET PROPS*/}
   )
 }
 
+function Timmer (){
+  //const time = new Date().toLocaleTimeString();
+  const [Time, setTime] = React.useState(new Date().toLocaleTimeString());
+  React.useEffect(function(){
+    const intervalId = setInterval(function(){
+      setTime(new Date().toLocaleTimeString());
+    }, 1000);
+    return ()=>clearInterval(intervalId)
+  }, []);
 
+  return(
+    <p>The time is {Time}</p>
+  )
+}
 
 
 
