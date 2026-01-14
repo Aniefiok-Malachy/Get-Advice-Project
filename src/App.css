@@ -1,0 +1,21 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+p{
+  font-size:20px ;
+}
+.form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 16px 20px;
+  background-color: #f9fafb;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #111827;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
