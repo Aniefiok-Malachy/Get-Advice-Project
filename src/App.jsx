@@ -26,10 +26,16 @@ export default function App(){
         {advice}
       </form>
       <button onClick={getAdvice}>Get advice</button>
-      <p>
-        You have read <strong>{count}</strong> pieces of advice
-      </p>
+      <Message count ={count} /> {/*SETTING UP A PROPS */}
     </div>
+  )
+}
+
+function Message(props){ {/* CALLING THE SET PROPS*/}
+  return(
+    <p>
+        You have read <strong>{props.count}</strong> pieces of advice
+    </p>
   )
 }
 
